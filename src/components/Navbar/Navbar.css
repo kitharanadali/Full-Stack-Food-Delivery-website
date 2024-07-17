@@ -1,0 +1,162 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content:space-between ;
+    transition: all ease .50s;
+}
+
+.navbar h2{
+    color:chocolate;
+    margin: 0;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-menu a{
+    margin: 16px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color:white;
+    transition: all ease .50s;
+}
+
+.navbar-menu a:hover{
+    color:#f66f4d;
+    
+}
+.navbar-right{
+    display: flex;
+    align-items:center;
+    gap: 40px;
+}
+
+.navbar button{
+    display: inline-block;
+    padding: 13px 38px;
+    background: #f66f4d;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all ease .50s;
+    cursor: pointer;
+
+}
+
+.navbar button:hover{
+    border: 2px solid #f66f4d;
+    background: transparent;
+    color: white;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom:2px solid #f66f4d ;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color:#f66f4d;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+
+}
+
+.navbar-profile {
+    position: relative;
+}
+
+.nav-profile-dropdown {
+    position:absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:#191918 ;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid #f66f4d;
+    outline: 2px solid rgb(35, 33, 33);
+    list-style: none;
+}
+ 
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: rgb(155, 147, 147);
+}
+
+.nav-profile-dropdown img {
+    width: 20px;
+}
+
+.nav-profile-dropdown li:hover {
+    color: #f66f4d;
+}
+
+@media (max-width:1050px) {
+    .navbar h2{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right {
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar h2{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right {
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:750px) {
+    .navbar-menu{
+        display: none;
+    }
+    
+}
